@@ -52,4 +52,22 @@ let code = 0;
 
 console.log("Federal Tax on $" + grossPay + " gross pay with a code of " + code + ": $" + getFederalTax(grossPay, code).toFixed(2));
 
+// this was a = 3, a = 3
+// "use strict";
+// let a = 4;
+// function test3() {
+//      a = 3;
+//      console.log("a = " + a);
+// }
+// test3();
+// console.log("a = " + a);
 
+// this got a = 7, a = 4
+"use strict";
+let a = 4;
+function test4() {
+     let a = 7;
+     console.log("a = " + a);
+}
+test4();
+console.log("a = " + a);
