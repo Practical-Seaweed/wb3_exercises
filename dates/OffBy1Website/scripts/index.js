@@ -19,9 +19,11 @@ function displayTime(){
     let theDate = document.querySelector("#theDate");
     let theParagraph = document.querySelector("#theParagraph");
 
+
     console.log(theDate.value);
 
-    let generatedDate = new Date(theDate.value);
+    let generatedDate = new Date(theDate.value+"T00:00:00");
 
     theParagraph.innerHTML = generatedDate.toLocaleString();
+
 }
